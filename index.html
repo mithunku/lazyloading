@@ -172,7 +172,7 @@
     }
 
     // Attach the loadMoreOnScroll function to the scroll event
-    window.addEventListener("scroll", loadMoreOnScroll);
+    document.addEventListener("scroll", loadMoreOnScroll);
 
     // Initial load of posts
     fetchAndDisplayPosts();
