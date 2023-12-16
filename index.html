@@ -112,7 +112,7 @@
         if (data.length === 0) {
           start = 0;
         }
-  console.log(data)
+  
         return data;
       } catch (error) {
         console.error("Error fetching posts from API:", error);
@@ -163,6 +163,7 @@
 
     // Function to load more posts when the user reaches the bottom of the page
     function loadMoreOnScroll() {
+        console.log("loading")
       if (isLoading) return;
 
       if (isBottomOfPage()) {
